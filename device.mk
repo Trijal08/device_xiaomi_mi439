@@ -370,8 +370,7 @@ PRODUCT_AAPT_PREF_CONFIG ?= xhdpi
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
+    android.hardware.sensors-service.example \
     libpower.vendor:64 \
     libsensorndkbridge
 
