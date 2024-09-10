@@ -110,22 +110,20 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     libdisplayconfig \
     libgralloc.qti \
     libqdMetaData \
     libtinyxml \
-    memtrack.msm8937 \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor \
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -297,6 +295,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -370,7 +371,8 @@ PRODUCT_AAPT_PREF_CONFIG ?= xhdpi
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.example \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
     libpower.vendor:64 \
     libsensorndkbridge
 
@@ -393,7 +395,7 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     usb_compositions.conf \
-    android.hardware.usb@1.3-service.mi439 \
+    android.hardware.usb@1.3-service.basic \
     android.hardware.usb.gadget@1.2-service-qti
 
 # Vibrator
@@ -429,9 +431,6 @@ $(call inherit-product, hardware/mithorium-4.19/mithorium_qcom_hals.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mi439/mi439-vendor.mk)
-
-# VIPERFX 
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # EXTRA: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera/config.mk),)
