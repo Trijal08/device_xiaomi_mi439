@@ -22,6 +22,9 @@ $(call inherit-product, device/xiaomi/mi439/device.mk)
 # Inherit from common infinity-X configuration
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+# gay infinity x 
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 PRODUCT_NAME := infinity_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
