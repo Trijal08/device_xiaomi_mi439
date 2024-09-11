@@ -227,3 +227,6 @@ include vendor/xiaomi/mi439/BoardConfigVendor.mk
 
 # QC common
 include device/qcom/common/BoardConfigQcom.mk
+
+# Missing Required Module
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
