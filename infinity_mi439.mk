@@ -19,14 +19,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common infinity-X configuration
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mi439
+PRODUCT_NAME := infinity_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Extra Stuffs
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := FARHAN_TURAN
+TARGET_BUILD_VIMUSIC := true
+USE_MOTO_CALCULATOR := true
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
