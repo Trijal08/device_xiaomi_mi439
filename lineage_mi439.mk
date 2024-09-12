@@ -40,7 +40,7 @@ TARGET_HAS_UDFPS := false
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Gapps
-WITH_GAPPS := false
+WITH_GAPPS := ture 
 
 # quick switch
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
