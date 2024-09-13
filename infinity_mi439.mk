@@ -36,6 +36,7 @@ INFINITY_MAINTAINER := FARHAN•AFK
 TARGET_BUILD_VIMUSIC := true
 USE_MOTO_CALCULATOR := true
 WITH_GMS := false 
+ROM_FOLDER := infinity
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
