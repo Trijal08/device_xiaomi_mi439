@@ -230,5 +230,7 @@ include device/qcom/common/BoardConfigQcom.mk
 
 # Missing Required Module
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/Phoneinfo.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/Phoneinfo.prop
