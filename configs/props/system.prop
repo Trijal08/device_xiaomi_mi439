@@ -172,8 +172,3 @@ persist.vendor.camera.privapp.list=com.android.camera,com.google.camera,org.line
 # Logs
 persist.log.tag.OpenGLRenderer=S
 
-# Infinity-X AboutPhone
-ro.infinity.soc=SDM 439
-ro.infinity.battery=5000mAh
-ro.infinity.display=720x1520
-ro.infinity.camera=12 MP + 2 MP
