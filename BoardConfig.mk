@@ -234,3 +234,5 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/Phoneinfo.prop
 
+# Fix prebuilt build
+$(shell mkdir -p $(OUT_DIR)/target/product/mi439/obj/KERNEL_OBJ/usr)
