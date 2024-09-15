@@ -32,6 +32,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 RISING_MAINTAINER=FARHAN•AFK
 PRODUCT_NO_CAMERA := false
 ROM_FOLDER := lineage
+WITH_GMS := true
+
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
