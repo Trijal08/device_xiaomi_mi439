@@ -20,15 +20,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
 # Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mi439
+PRODUCT_NAME := lineage_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
-ROM_FOLDER := aosp
 
+# RisingOS stuff 
+RISING_MAINTAINER=FARHAN•AFK
+PRODUCT_NO_CAMERA := false
+ROM_FOLDER := lineage
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
@@ -39,3 +42,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Mi439" \
+    RISING_MAINTAINER="FARHAN•AFK" \
+    RISING_CHIPSET="SDM439"
