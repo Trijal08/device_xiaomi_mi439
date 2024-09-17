@@ -22,6 +22,16 @@ $(call inherit-product, device/xiaomi/mi439/device.mk)
 # Inherit from common AOSP configuration
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
+# Maintainer
+AFTERLIFE_MAINTAINER := FARHAN•AFK¿
+
+# Blur 
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+
 PRODUCT_NAME := afterlife_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
