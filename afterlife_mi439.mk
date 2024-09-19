@@ -24,11 +24,13 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Maintainer
 AFTERLIFE_MAINTAINER := FARHAN•AFK¿
+AFTERLIFE_GAPPS := true
 
 # Blur 
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
+
 # Pixel Charging
 USE_PIXEL_CHARGING := true
 
