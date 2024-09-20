@@ -28,8 +28,9 @@ AFTERLIFE_MAINTAINER := FARHAN•AFK¿
 # Pixel Charging
 USE_PIXEL_CHARGING := true
 
-# AfterLife stuff
+# CoreGapps
 AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
 
 PRODUCT_NAME := afterlife_mi439
 PRODUCT_DEVICE := mi439
@@ -37,6 +38,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 ROM_FOLDER := afterlife
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
