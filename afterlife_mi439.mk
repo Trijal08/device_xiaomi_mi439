@@ -27,6 +27,9 @@ AFTERLIFE_MAINTAINER := FARHAN•AFK¿
 
 # Pixel Charging
 USE_PIXEL_CHARGING := true
+# gapps 
+AFTERLIFE_CORE := true
+AFTERLIFE_EXTRA := true
 
 PRODUCT_NAME := afterlife_mi439
 PRODUCT_DEVICE := mi439
