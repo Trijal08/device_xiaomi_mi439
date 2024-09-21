@@ -20,14 +20,44 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
 # Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/sigma/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mi439
+# Sigma Variables
+SIGMA_CHIPSET="SDM439"
+SIGMA_MAINTAINER="AFK?FRN"
+SIGMA_DEVICE := "Mi439"
+
+# Build package
+#WITH_GMS := true
+#TARGET_CORE_GMS := true
+#TARGET_CORE_GMS_EXTRAS := true
+WITH_GMS := false
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Clear calling
+TARGET_SUPPORTS_CLEAR_CALLING := true
+
+# Pixel features
+TARGET_ENABLE_PIXEL_FEATURES := true
+
+# Use Google telephony framework
+TARGET_USE_GOOGLE_TELEPHONY := true
+
+# Touch Gestures
+TARGET_SUPPORTS_TOUCHGESTURES := true
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+
+
+PRODUCT_NAME := sigma_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
-ROM_FOLDER := aosp
+ROM_FOLDER := sigma
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
