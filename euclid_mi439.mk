@@ -20,15 +20,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
 # Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mi439
+PRODUCT_NAME := euclid_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
-ROM_FOLDER := aosp
+ROM_FOLDER := euclid
 
+# EuclidOS Flags
+EUCLID_MAINTAINER := AFK FRN
+EUCLID_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
