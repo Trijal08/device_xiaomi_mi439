@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mi439.mk
+    $(LOCAL_DIR)/euclid_mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_mi439-user \
-    aosp_mi439-userdebug \
-    aosp_mi439-eng
+    euclid_mi439-user \
+    euclid_mi439-userdebug \
+    euclid_mi439-eng
