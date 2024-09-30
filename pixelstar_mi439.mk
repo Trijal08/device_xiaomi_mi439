@@ -34,6 +34,12 @@ PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 ROM_FOLDER := pixelstar
 
+# Build package
+#WITH_GMS := true
+#TARGET_CORE_GMS := true
+#TARGET_CORE_GMS_EXTRAS := true
+WITH_GMS := false
+
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
