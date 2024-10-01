@@ -5,21 +5,75 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    Chrome \
-    Drive \
-    Gmail2 \
-    Maps \
-    YouTube \
-    BetterBugStub \
-    CalculatorGooglePrebuilt \
-    CalendarGooglePrebuilt \
-    Chrome-Stub \
-    GoogleContacts \
-    PrebuiltDeskClockGoogle \
-    PrebuiltBugle \
-    TrichromeLibrary \
-    TrichromeLibrary-Stub \
+    AmbientStreaming \
+	BetterBugStub \
+	BookmarkProvider \
+	CameraGo \
+	CarrierMetrics \
+	CbrsNetworkMonitor \
+	DevicePolicyPrebuilt \
+	DiagnosticsToolPrebuilt \
+	Drive \
+	EvoEgg \
+	GCam \
+	GCamGOPrebuilt \
+	GCamGo \
+	GalleryGo \
+	Gcam \
+	GoogleCamera \
+	GoogleCameraGo \
+	GoogleCameraLegacy \
+	GoogleFeedback \
+	GoogleTTS \
+	Gramophone \
+	HTMLViewer \
+	MatLog \
+	Music \
+	NgaResources \
+	Papers \
+	PixelLiveWallpaperPrebuilt \
+	PixelSupportPrebuilt \
+	PixelWallpapers2023 \
+	PrebuiltGmail \
+	RecorderPrebuilt \
+	SwitchAccessPrebuilt \
+	Updates \
+	ViMusic \
+	VoiceAccessPrebuilt \
+	WallpaperEffect \
+	WeatherPixelPrebuilt \
+	YouTube \
+	YouTubeMusicPrebuilt \
+	YouTubeVanced \
+	linktowindows \
+	talkback \
+    AmbientSensePrebuilt \
+    ConnMO \
+    ConnMetrics \
+    DCMO \
+    DMService \
+    DeviceAsWebcam \
     GCS \
+    Maps \
+    MyVerizonServices \
+    OBDM_Permissions \
+    OdadPrebuilt \
+    OemDmTrigger \
+    Ornament \
+    PixelBuds \
+    SCONE \
+    ScribePrebuilt \
+    Showcase \
+    SoundAmplifierPrebuilt \
+    SprintDM \
+    SprintHM \
+    Tycho \
+    USCCDM \
+    Updater \
+    VZWAPNLib \
+    Videos \
+    VzwOmaTrigger \
+    obdm_stub \
     talkback \
     WellbeingPrebuilt \
     GoogleDialer \
@@ -33,6 +87,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     WebViewGoogle-Stub \
     HealthIntelligenceStubPrebuilt \
     QuickSearchBox
+
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
