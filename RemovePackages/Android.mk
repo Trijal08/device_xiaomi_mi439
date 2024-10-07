@@ -9,6 +9,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     Gmail2 \
     Maps \
+    YouTube \
     BetterBugStub \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
@@ -30,25 +31,10 @@ LOCAL_OVERRIDES_PACKAGES := \
     LatinIMEGooglePrebuilt \
     WebViewGoogle \
     WebViewGoogle-Stub \
-    HealthIntelligenceStubPrebuilt \
-    MyVerizonServices \
-    OBDM_Permissions \
-    obdm_stub \
-    OemDmTrigger \
-    OPScreenRecord \
-    Ornament \
-    SafetyHubPrebuilt \
-    ScribePrebuilt \
-    Showcase \
-    Snap \
-    SprintDM \
-    SprintHM \
-    VZWAPNLib \
-    VzwOmaTrigger \
-    YouTube \
-    YouTubeMusicPrebuilt \
-    QuickSearchBox
+    HealthIntelligenceStubPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
 include $(BUILD_PREBUILT)
+
+
