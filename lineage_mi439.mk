@@ -28,15 +28,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 
-# RisingOS stuff 
-RISING_MAINTAINER=FARHAN•AFK
-PRODUCT_NO_CAMERA := false
-ROM_FOLDER := lineage
-#WITH_GMS := true
-# Evolution-XYZ
-WITH_GMS := false 
-TARGET_HAS_UDFPS := true
-
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
