@@ -5,6 +5,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Disable artifact path requirements
+DISABLE_ARTIFACT_PATH_REQUIREMENTS=true
+
+# Basic Call Recorder
+$(call inherit-product, vendor/bcr/bcr.mk)
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Face Unlock
+$(call inherit-product, vendor/google/faceunlock/device.mk)
+
+# Signed Build
+-include vendor/lineage-priv/keys/keys.mk
+
 # Enable support for APEX updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
