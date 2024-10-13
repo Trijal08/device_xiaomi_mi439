@@ -6,6 +6,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/mi439
+ROM_FOLDER := lineage
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
